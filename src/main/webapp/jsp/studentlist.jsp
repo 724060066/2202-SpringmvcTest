@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<span><a href="${pageContext.request.contextPath }/addstudent.jsp">添加学生</a></span>
+<span><a href="${pageContext.request.contextPath }/jsp/addstudent.jsp">添加学生</a></span>
     <table>
         <thead>
             <tr>
@@ -24,7 +24,7 @@
                 <tr>
                     <td>${student.studentCode}</td>
                     <td>
-                        <a href="${pageContext.request.contextPath }/student?method=view&id=${student.id}">
+                        <a href="${pageContext.request.contextPath }/student/view?id=${student.id}">
                                 ${student.studentName}</a>
                     </td>
                     <td>${student.age}</td>
@@ -35,10 +35,10 @@
                     <td>${student.phone}</td>
                     <td>
                         <span>
-                            <a href="${pageContext.request.contextPath }/student?method=viewforupdate&id=${student.id}">修改</a>
+                            <a href="${pageContext.request.contextPath }/student/viewForUpdate?id=${student.id}">修改</a>
                         </span>
                         <span>
-                            <a href="${pageContext.request.contextPath }/student?method=remove&id=${student.id}">删除</a>
+                            <a href="${pageContext.request.contextPath }/student/remove?id=${student.id}">删除</a>
                         </span>
                     </td>
                 </tr>
