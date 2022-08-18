@@ -37,7 +37,7 @@ public class StudentController {
     }
 
     /**
-     * 根据id查询学生信息
+     * 根据id查询学生信息1
      *
      * @param model
      * @param id
